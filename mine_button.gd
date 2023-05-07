@@ -6,7 +6,7 @@ extends Button
 signal mine_revealed(MineButton)
 
 func _ready() -> void:
-	self.connect("button_up", _on_button_clicked)
+	self.button_up.connect(_on_button_clicked)
 
 func _on_button_clicked() -> void:
 	if mine_value > 0:

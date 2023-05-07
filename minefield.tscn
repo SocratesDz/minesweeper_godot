@@ -2,15 +2,10 @@
 
 [ext_resource type="Script" path="res://minefield.gd" id="1_v88tf"]
 
-[node name="Minefield" type="Control"]
-layout_mode = 3
+[node name="Minefield" type="GridContainer"]
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_v88tf")
-
-[node name="MineGrid" type="GridContainer" parent="."]
-unique_name_in_owner = true
-layout_mode = 2

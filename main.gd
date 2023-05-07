@@ -1,4 +1,4 @@
-extends Button
+extends Node
 
 func _ready():
 	pass
