@@ -1,23 +1,9 @@
 [gd_scene load_steps=3 format=3 uid="uid://d218p0wtcr8fb"]
 
 [ext_resource type="Script" path="res://main.gd" id="1_ki4dj"]
-[ext_resource type="PackedScene" uid="uid://dlps805l12qne" path="res://minefield.tscn" id="2_hpmdl"]
+[ext_resource type="PackedScene" uid="uid://crkssski8j412" path="res://game_screen.tscn" id="2_n7rvw"]
 
 [node name="Main" type="Node"]
 script = ExtResource("1_ki4dj")
 
-[node name="ScrollContainer" type="ScrollContainer" parent="."]
-clip_contents = false
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-horizontal_scroll_mode = 2
-vertical_scroll_mode = 2
-
-[node name="Minefield" parent="ScrollContainer" instance=ExtResource("2_hpmdl")]
-layout_mode = 2
-size_flags_horizontal = 3
-size_flags_vertical = 3
-metadata/_edit_use_anchors_ = true
+[node name="GameScreen" parent="." instance=ExtResource("2_n7rvw")]
